@@ -1,5 +1,30 @@
 // Обнуление стилей
 @import "nullstyle.scss";
 // Подключение шрифтов
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 //SCSS
+.content {
+    font-family: 'Roboto', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.test {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+		&__input {
+            border: 1px solid black;
+            font-size: 20px;
+            padding: 5px 10px;
+		}
+
+		&__button {
+            margin: 20px 0;
+            background-color: rgb(255, 196, 0);
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 5px; 
+		}
+}
